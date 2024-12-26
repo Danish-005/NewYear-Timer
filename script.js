@@ -5,7 +5,7 @@ let ret = setInterval(updateTimeinHtml, 1000);
 
 function updateTimeinHtml() {
   const current_timestamp = Date.now();
-  const newyear_timestamp = new Date(2024, 11, 25, 23, 3).getTime();
+  const newyear_timestamp = new Date(2025, 0, 1).getTime();
   let milli = newyear_timestamp - current_timestamp;
   let second = Math.trunc((milli / 1000) % 60);
   let minute = Math.trunc((milli / (1000 * 60)) % 60);
